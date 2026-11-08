@@ -97,9 +97,9 @@
       "simple": { "limit": 30, "period": 60 }
     }
   ],
-  "triggers": {
-    "crons": ["17 3 * * *"]
-  },
+  // This Cloudflare Free account has exhausted its five account-wide cron slots.
+  // Enable the maintenance cron after a slot is available (or the plan changes).
+  // "triggers": { "crons": ["17 3 * * *"] },
   "vars": {
     "FLAREMO_DEPLOY_REPOSITORY": "Paspartame/FlareMo",
     "FLAREMO_SINGLE_USER_EMAIL": "owner@flaremo.local",
